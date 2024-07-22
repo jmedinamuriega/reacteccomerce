@@ -1,0 +1,68 @@
+.order-history {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.order-history h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-history li {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure relative positioning for button */
+}
+
+.order-history li.expanded {
+  padding-bottom: 30px; /* Increase padding when expanded */
+}
+
+.order-history li h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.order-history li p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.order-history li button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  right: 15px;
+  bottom: -20px; /* Adjusted bottom position */
+}
+
+.order-history li button:hover {
+  background-color: #0056b3;
+}
+
+.order-details {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
