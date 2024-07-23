@@ -24,11 +24,11 @@
   margin-bottom: 15px;
   padding: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative; /* Ensure relative positioning for button */
+  position: relative;
 }
 
 .order-history li.expanded {
-  padding-bottom: 30px; /* Increase padding when expanded */
+  padding-bottom: 30px;
 }
 
 .order-history li h3 {
@@ -53,7 +53,7 @@
   transition: background-color 0.3s ease;
   position: absolute;
   right: 15px;
-  bottom: -20px; /* Adjusted bottom position */
+  bottom: -20px; 
 }
 
 .order-history li button:hover {

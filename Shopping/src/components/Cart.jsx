@@ -2,13 +2,13 @@ import React, { useState, useContext } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromCart, updateQuantity, clearCart } from '../slices/cartSlice';
 import OrderHistory from './OrderHistory';
-import { OrderContext } from '../contexts/OrderContext'; // Import the OrderContext
+import { OrderContext } from '../contexts/OrderContext'; 
 import './Cart.css';
 
 const Cart = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector(state => state.cart.items);
-  const { addOrder } = useContext(OrderContext); // Use the OrderContext
+  const { addOrder } = useContext(OrderContext); 
 
   const [isCheckingOut, setIsCheckingOut] = useState(false);
   const [checkoutComplete, setCheckoutComplete] = useState(false);
@@ -33,7 +33,7 @@ const Cart = () => {
       setCheckoutError(null);
 
       const order = { cartItems, totalPrice, date_created: new Date() };
-      addOrder(order); // Add the order to the context
+      addOrder(order); 
       dispatch(clearCart());
       sessionStorage.removeItem('cart');
       setCheckoutComplete(true);

@@ -32,7 +32,7 @@ const Navbar = () => {
             <Link to="/register">Register</Link>
           </>
         )}
-        <Link to="/order-history">Order History</Link> {/* Add link for Order History */}
+        <Link to="/order-history">Order History</Link> 
       </div>
     </nav>
   );

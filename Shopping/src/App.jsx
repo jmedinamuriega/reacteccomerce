@@ -19,10 +19,10 @@ const App = () => {
   return (
     <Provider store={store}>
       <AuthProvider>
-        <OrderProvider> {/* Wrap with OrderProvider */}
+        <OrderProvider> 
           <Router>
-            <Navbar /> {/* Add Navbar component */}
-            <main style={{ marginTop: '60px' }}> {/* Adjust for the fixed navbar */}
+            <Navbar /> 
+            <main style={{ marginTop: '60px' }}> 
               <Routes>
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />

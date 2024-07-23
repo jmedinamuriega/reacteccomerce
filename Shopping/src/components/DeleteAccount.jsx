@@ -10,10 +10,10 @@ const DeleteAccount = () => {
   const handleDelete = async () => {
     if (window.confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
       try {
-        await axios.delete(`http://localhost:5000/users/${user.id}`); // Correct URL
+        await axios.delete(`http://localhost:5000/users/${user.id}`); 
         logout();
         alert('Account deleted successfully');
-        navigate('/register'); // Redirect to register page after successful deletion
+        navigate('/register'); 
       } catch (error) {
         console.error('Error deleting account:', error);
         alert('Account deletion failed. Please try again later.');
